@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Create Transaction</h2>
+    <form action="{{ url_for('change_action') }}" method=post>
+        <p class="heading">Transaction Type:<select name="action" onchange="this.form.submit()">
+
+        </select>
+    </form>
+    <form action="{{ url_for('send') }}" method=post>
+
+    </form>
+{% endblock %}
